@@ -169,7 +169,7 @@ a.footnote_tooltip_continue:hover, .footnote_plugin_text a:hover, .entry-content
 	text-decoration:none!important;
 }
 .entry-content a.footnote_hard_link > sup {
-	margin:.2em;
+	margin:0 0 0 -3px;
 	top:-.6em;
 	font-size:70%;
 	background-color:rgba(240, 255, 0, .5);
