@@ -1,0 +1,315 @@
+ @font-face {
+                font-family: CNN;
+                src: url(cnnsans-thin.eot) format("embedded-opentype"),url(cnnsans-thin.woff2) format("woff2"),url(cnnsans-thin.woff) format("woff"),url(cnnsans-thin.ttf) format("truetype");
+                font-weight: 200;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-light.eot) format("embedded-opentype"),url(cnnsans-light.woff2) format("woff2"),url(cnnsans-light.woff) format("woff"),url(cnnsans-light.ttf) format("truetype");
+                font-weight: 300;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-regular.eot) format("embedded-opentype"),url(cnnsans-regular.woff2) format("woff2"),url(cnnsans-regular.woff) format("woff"),url(cnnsans-regular.ttf) format("truetype");
+                font-weight: 400;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-medium.eot) format("embedded-opentype"),url(cnnsans-medium.woff2) format("woff2"),url(cnnsans-medium.woff) format("woff"),url(cnnsans-medium.ttf) format("truetype");
+                font-weight: 500;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-bold.eot) format("embedded-opentype"),url(cnnsans-bold.woff2) format("woff2"),url(cnnsans-bold.woff) format("woff"),url(cnnsans-bold.ttf) format("truetype");
+                font-weight: 700;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-heavy.eot) format("embedded-opentype"),url(cnnsans-heavy.woff2) format("woff2"),url(cnnsans-heavy.woff) format("woff"),url(cnnsans-heavy.ttf) format("truetype");
+                font-weight: 800;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-black.eot) format("embedded-opentype"),url(cnnsans-black.woff2) format("woff2"),url(cnnsans-black.woff) format("woff"),url(cnnsans-black.ttf) format("truetype");
+                font-weight: 900;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-thinit.eot) format("embedded-opentype"),url(cnnsans-thinit.woff2) format("woff2"),url(cnnsans-thinit.woff) format("woff"),url(cnnsans-thinit.ttf) format("truetype");
+                font-weight: 200;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-lightit.eot) format("embedded-opentype"),url(cnnsans-lightit.woff2) format("woff2"),url(cnnsans-lightit.woff) format("woff"),url(cnnsans-lightit.ttf) format("truetype");
+                font-weight: 300;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-italic.eot) format("embedded-opentype"),url(cnnsans-italic.woff2) format("woff2"),url(cnnsans-italic.woff) format("woff"),url(cnnsans-italic.ttf) format("truetype");
+                font-weight: 400;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-mediumit.eot) format("embedded-opentype"),url(cnnsans-mediumit.woff2) format("woff2"),url(cnnsans-mediumit.woff) format("woff"),url(cnnsans-mediumit.ttf) format("truetype");
+                font-weight: 500;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-boldit.eot) format("embedded-opentype"),url(cnnsans-boldit.woff2) format("woff2"),url(cnnsans-boldit.woff) format("woff"),url(cnnsans-boldit.ttf) format("truetype");
+                font-weight: 700;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-heavyit.eot) format("embedded-opentype"),url(cnnsans-heavyit.woff2) format("woff2"),url(cnnsans-heavyit.woff) format("woff"),url(cnnsans-heavyit.ttf) format("truetype");
+                font-weight: 800;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN;
+                src: url(cnnsans-blackit.eot) format("embedded-opentype"),url(cnnsans-blackit.woff2) format("woff2"),url(cnnsans-blackit.woff) format("woff"),url(cnnsans-blackit.ttf) format("truetype");
+                font-weight: 900;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN Condensed;
+                src: url(cnnsans-condensedlight.eot) format("embedded-opentype"),url(cnnsans-condensedlight.woff2) format("woff2"),url(cnnsans-condensedlight.woff) format("woff"),url(cnnsans-condensedlight.ttf) format("truetype");
+                font-weight: 300;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Condensed;
+                src: url(cnnsans-condensed.eot) format("embedded-opentype"),url(cnnsans-condensed.woff2) format("woff2"),url(cnnsans-condensed.woff) format("woff"),url(cnnsans-condensed.ttf) format("truetype");
+                font-weight: 400;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Condensed;
+                src: url(cnnsans-condensedmedium.eot) format("embedded-opentype"),url(cnnsans-condensedmedium.woff2) format("woff2"),url(cnnsans-condensedmedium.woff) format("woff"),url(cnnsans-condensedmedium.ttf) format("truetype");
+                font-weight: 500;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Condensed;
+                src: url(cnnsans-condensedbold.eot) format("embedded-opentype"),url(cnnsans-condensedbold.woff2) format("woff2"),url(cnnsans-condensedbold.woff) format("woff"),url(cnnsans-condensedbold.ttf) format("truetype");
+                font-weight: 700;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-thin.eot) format("embedded-opentype"),url(cnnclock-thin.woff2) format("woff2"),url(cnnclock-thin.woff) format("woff"),url(cnnclock-thin.ttf) format("truetype");
+                font-weight: 200;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-light.eot) format("embedded-opentype"),url(cnnclock-light.woff2) format("woff2"),url(cnnclock-light.woff) format("woff"),url(cnnclock-light.ttf) format("truetype");
+                font-weight: 300;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-regular.eot) format("embedded-opentype"),url(cnnclock-regular.woff2) format("woff2"),url(cnnclock-regular.woff) format("woff"),url(cnnclock-regular.ttf) format("truetype");
+                font-weight: 400;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-medium.eot) format("embedded-opentype"),url(cnnclock-medium.woff2) format("woff2"),url(cnnclock-medium.woff) format("woff"),url(cnnclock-medium.ttf) format("truetype");
+                font-weight: 500;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-bold.eot) format("embedded-opentype"),url(cnnclock-bold.woff2) format("woff2"),url(cnnclock-bold.woff) format("woff"),url(cnnclock-bold.ttf) format("truetype");
+                font-weight: 700;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-heavy.eot) format("embedded-opentype"),url(cnnclock-heavy.woff2) format("woff2"),url(cnnclock-heavy.woff) format("woff"),url(cnnclock-heavy.ttf) format("truetype");
+                font-weight: 800;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-black.eot) format("embedded-opentype"),url(cnnclock-black.woff2) format("woff2"),url(cnnclock-black.woff) format("woff"),url(cnnclock-black.ttf) format("truetype");
+                font-weight: 900;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-thinit.eot) format("embedded-opentype"),url(cnnclock-thinit.woff2) format("woff2"),url(cnnclock-thinit.woff) format("woff"),url(cnnclock-thinit.ttf) format("truetype");
+                font-weight: 200;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-lightit.eot) format("embedded-opentype"),url(cnnclock-lightit.woff2) format("woff2"),url(cnnclock-lightit.woff) format("woff"),url(cnnclock-lightit.ttf) format("truetype");
+                font-weight: 300;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-italic.eot) format("embedded-opentype"),url(cnnclock-italic.woff2) format("woff2"),url(cnnclock-italic.woff) format("woff"),url(cnnclock-italic.ttf) format("truetype");
+                font-weight: 400;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-mediumit.eot) format("embedded-opentype"),url(cnnclock-mediumit.woff2) format("woff2"),url(cnnclock-mediumit.woff) format("woff"),url(cnnclock-mediumit.ttf) format("truetype");
+                font-weight: 500;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-boldit.eot) format("embedded-opentype"),url(cnnclock-boldit.woff2) format("woff2"),url(cnnclock-boldit.woff) format("woff"),url(cnnclock-boldit.ttf) format("truetype");
+                font-weight: 700;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-heavyit.eot) format("embedded-opentype"),url(cnnclock-heavyit.woff2) format("woff2"),url(cnnclock-heavyit.woff) format("woff"),url(cnnclock-heavyit.ttf) format("truetype");
+                font-weight: 800;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: CNN Clock;
+                src: url(cnnclock-blackit.eot) format("embedded-opentype"),url(cnnclock-blackit.woff2) format("woff2"),url(cnnclock-blackit.woff) format("woff"),url(cnnclock-blackit.ttf) format("truetype");
+                font-weight: 900;
+                font-style: italic
+            }
+
+            @font-face {
+                font-family: DIN Condensed;
+                src: url(din-condensed.eot) format("embedded-opentype"),url(din-condensed.woff2) format("woff2"),url(din-condensed.woff) format("woff"),url(din-condensed.ttf) format("truetype");
+                font-weight: 400;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: STYLE;
+                src: url(cnnstyle-regular.eot) format("embedded-opentype"),url(cnnstyle-regular.woff2) format("woff2"),url(cnnstyle-regular.woff) format("woff"),url(cnnstyle-regular.ttf) format("truetype");
+                font-weight: 400;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Business;
+                src: url(cnnbiz-regular.eot) format("embedded-opentype"),url(cnnbiz-regular.woff2) format("woff2"),url(cnnbiz-regular.woff) format("woff"),url(cnnbiz-regular.ttf) format("truetype");
+                font-weight: 400;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Business;
+                src: url(cnnbiz-medium.eot) format("embedded-opentype"),url(cnnbiz-medium.woff2) format("woff2"),url(cnnbiz-medium.woff) format("woff"),url(cnnbiz-medium.ttf) format("truetype");
+                font-weight: 500;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Business;
+                src: url(cnnbiz-bold.eot) format("embedded-opentype"),url(cnnbiz-bold.woff2) format("woff2"),url(cnnbiz-bold.woff) format("woff"),url(cnnbiz-bold.ttf) format("truetype");
+                font-weight: 700;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Business;
+                src: url(cnnbiz-heavy.eot) format("embedded-opentype"),url(cnnbiz-heavy.woff2) format("woff2"),url(cnnbiz-heavy.woff) format("woff"),url(cnnbiz-heavy.ttf) format("truetype");
+                font-weight: 800;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Travel;
+                src: url(cnntravel-thin.eot) format("embedded-opentype"),url(cnntravel-thin.woff2) format("woff2"),url(cnntravel-thin.woff) format("woff"),url(cnntravel-thin.ttf) format("truetype");
+                font-weight: 200;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Travel;
+                src: url(cnntravel-light.eot) format("embedded-opentype"),url(cnntravel-light.woff2) format("woff2"),url(cnntravel-light.woff) format("woff"),url(cnntravel-light.ttf) format("truetype");
+                font-weight: 300;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Travel;
+                src: url(cnntravel-regular.eot) format("embedded-opentype"),url(cnntravel-regular.woff2) format("woff2"),url(cnntravel-regular.woff) format("woff"),url(cnntravel-regular.ttf) format("truetype");
+                font-weight: 400;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Travel;
+                src: url(cnntravel-medium.eot) format("embedded-opentype"),url(cnntravel-medium.woff2) format("woff2"),url(cnntravel-medium.woff) format("woff"),url(cnntravel-medium.ttf) format("truetype");
+                font-weight: 500;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Travel;
+                src: url(cnntravel-semibold.eot) format("embedded-opentype"),url(cnntravel-semibold.woff2) format("woff2"),url(cnntravel-semibold.woff) format("woff"),url(cnntravel-semibold.ttf) format("truetype");
+                font-weight: 600;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: CNN Travel;
+                src: url(cnntravel-bold.eot) format("embedded-opentype"),url(cnntravel-bold.woff2) format("woff2"),url(cnntravel-bold.woff) format("woff"),url(cnntravel-bold.ttf) format("truetype");
+                font-weight: 700;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: cnn-icons;
+                src: url(cnn-icons.eot);
+                src: url(cnn-icons.eot?#iefix) format("embedded-opentype"),url(cnn-icons.woff2) format("woff2"),url(cnn-icons.woff) format("woff"),url(cnn-icons.ttf) format("truetype"),url(cnn-icons.svg?#cnn-icons) format("svg");
+                font-weight: 400;
+                font-style: normal
+            }
