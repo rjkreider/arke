@@ -43,6 +43,7 @@
 									<?php bloginfo( 'name' ); ?>
 								</a>
 							</p>
+							<p class="site-description"><?php bloginfo('description'); ?></p>
 
 						<?php endif; ?>
 
