@@ -230,3 +230,7 @@ div.xarchives__title {
 	
 	color: #ffffff ! important;
 }
+
+.related_posts {
+	border-top: 1px solid #eaeaea;
+}

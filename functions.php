@@ -248,3 +248,52 @@ return $content;
 }
 
 add_theme_support( 'align-wide' );
+
+function related_posts() {
+
+    $post_id = get_the_ID();
+    $cat_ids = array();
+    $categories = get_the_category( $post_id );
+
+    if(!empty($categories) && !is_wp_error($categories)):
+        foreach ($categories as $category):
+            array_push($cat_ids, $category->term_id);
+        endforeach;
+    endif;
+
+    $current_post_type = get_post_type($post_id);
+
+    $query_args = array( 
+        'category__in'   => $cat_ids,
+        'post_type'      => $current_post_type,
+        'post__not_in'    => array($post_id),
+        'posts_per_page'  => '5',
+     );
+
+    $related_cats_post = new WP_Query( $query_args );
+
+
+    if($related_cats_post->have_posts()):
+	 echo '<div class="related_posts">';
+	 echo '<h2>Related</h2>';
+	 echo '<div class="archives__list__div__wrap">';
+	
+         while($related_cats_post->have_posts()): $related_cats_post->the_post(); ?>
+		<div class="archives__list__div">
+			<div class="archives__title">
+		                   <a href="<?php the_permalink(); ?>">
+        		                <?php the_title(); ?>
+				   </a>
+		        </div>
+
+	                <div class="archives__date">
+				<?php echo get_the_time('d-M-y',the_post()); ?>
+			</div>
+		</div>
+        <?php endwhile;
+	echo '</div></div>';
+        // Restore original Post Data
+       wp_reset_postdata();
+     endif;
+
+}

@@ -48,3 +48,8 @@
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
+
+<?php if(is_single()) { 
+//related_posts();
+}
+?>
