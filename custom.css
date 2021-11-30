@@ -237,3 +237,16 @@ div.xarchives__title {
 .has-small-font-size {
 	line-height:1.5em;
 }
+.post_tags {
+	border-top: solid 1px #eaeaea;
+	padding-top: 25px;
+	margin-top: 25px;
+	font-size: .9em;
+}
+.post_tags a {
+	text-decoration: none;
+	color: #b8b8b8;
+}
+.post_tags a:hover {
+	color:rgb(55,103,179);
+}
