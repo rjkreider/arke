@@ -49,11 +49,15 @@
 
 </article><!-- #post-## -->
 
+<?php if(is_single()) {
+?>
 <div class="post_tags">
 <?php
 echo show_tags();
 ?>
 </div>
+<?php } ?>
+
 <?php if(is_single()) { 
 //related_posts();
 }
