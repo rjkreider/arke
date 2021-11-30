@@ -26,7 +26,10 @@
 		?><div class="entry-meta"><?php
 		the_date('','<span class="entry-date">','</span>');
 		echo '<span class="entry-categories"> in ';
-		the_category(',','multiple',false);
+		the_category(', ','multiple',false);
+		echo '</span>';
+		echo '<span class="entry-tags">';
+		echo show_tags();
 		echo '</span>';
 		?></div><?php
 		else :
@@ -48,15 +51,6 @@
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
-
-<?php if(is_single()) {
-?>
-<div class="post_tags">
-<?php
-echo show_tags();
-?>
-</div>
-<?php } ?>
 
 <?php if(is_single()) { 
 //related_posts();

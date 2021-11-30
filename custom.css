@@ -45,11 +45,11 @@ figcaption {
 }
 .menu-item a:hover {
 }
-.entry-date, .entry-categories {
+.entry-date, .entry-categories, .entry-tags {
 	font-size:.9em;
 }
 
-.entry-categories a,#content-area h2 a {
+.entry-categories a, .entry-tags a, #content-area h2 a {
 	text-decoration: none;
 }
 .menu {
@@ -111,7 +111,7 @@ body {
 	font-family: CNN, sans-serif;
 	font-weight:300;
 }
-.entry-date,.entry-categories {
+.entry-date,.entry-categories,.post_tags {
 font-family: CNN, sans-serif;
 font-weight:400;
 	xdisplay:none;
@@ -237,16 +237,16 @@ div.xarchives__title {
 .has-small-font-size {
 	line-height:1.5em;
 }
-.post_tags {
+.xpost_tags {
 	border-top: solid 1px #eaeaea;
 	padding-top: 25px;
 	margin-top: 25px;
 	font-size: .9em;
 }
-.post_tags a {
+.xpost_tags a {
 	text-decoration: none;
 	color: #b8b8b8;
 }
-.post_tags a:hover {
+.xpost_tags a:hover {
 	color:rgb(55,103,179);
 }

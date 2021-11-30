@@ -302,10 +302,11 @@ function related_posts() {
 
 function show_tags() {
     $post_tags = get_the_tags();
-    $separator = ' , ';
+    $separator = ', ';
     $output = '';
  
     if ( ! empty( $post_tags ) ) {
+	echo ' | ';
         foreach ( $post_tags as $tag ) {
             $output .= '<a href="' . esc_attr( get_tag_link( $tag->term_id ) ) . '">#' . __( $tag->name ) . '</a>' . $separator;
         }
