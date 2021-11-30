@@ -234,3 +234,6 @@ div.xarchives__title {
 .related_posts {
 	border-top: 1px solid #eaeaea;
 }
+.has-small-font-size {
+	line-height:1.5em;
+}
