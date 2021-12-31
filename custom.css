@@ -1,5 +1,5 @@
 
-@import url('assets/fonts/CNN.css');
+/** @import url('assets/fonts/CNN,sans-serif.css'); **/
 
 figure.wp-block-pullquote {
 	font-size:80%;
@@ -10,7 +10,7 @@ figure.wp-block-pullquote {
 	font-weight: 900;
 }
 body {
-	font-family: CNN;
+	font-family: CNN,sans-serif;
 	
 	background: #f7f7f7;
   color: #111111;
@@ -62,8 +62,7 @@ figcaption {
 
 .post-footer {
 	color: #b8b8b8;
-	text-align:center;
-	letter-spacing: 1em;
+/**	letter-spacing: 1em; **/
 	width:100%;
 }
 
@@ -100,7 +99,7 @@ body {
 }
 
 .site-title {
-	font-family: CNN, 'Amiri';
+	font-family: CNN,sans-serif, 'Amiri';
 	font-size: 2em;
 	font-variantx:small-caps;
 	font-weight:900;
@@ -108,23 +107,23 @@ body {
 }
 
 .menu {
-	font-family: CNN, sans-serif;
+	font-family: CNN,sans-serif, sans-serif;
 	font-weight:300;
 }
 .entry-date,.entry-categories,.post_tags {
-font-family: CNN, sans-serif;
+font-family: CNN,sans-serif, sans-serif;
 font-weight:400;
 	xdisplay:none;
 	text-align:center;
 }
 .entry-content {
-	font-family: CNN, georgia;
+	font-family: CNN,sans-serif, georgia;
 	font-weight:300;
 	line-height: 32px;
 	font-size: 16px;
 }
 .entry-title {
-	font-family: CNN, amiri, serif;
+	font-family: CNN,sans-serif, amiri, serif;
 	font-weight:300;
 	text-align:center;
 	font-size: 40px;
@@ -180,12 +179,12 @@ a.footnote_tooltip_continue:hover, .footnote_plugin_text a:hover, .entry-content
 }
 
 h1,h2,h3,h4,h5,h6 {
-	xfont-family: CNN, sans-serif;
+	xfont-family: CNN,sans-serif, sans-serif;
 	font-weight: normal;
 }
 
 .archives__list__div {
-	font-family: CNN, georgia, serif;
+	font-family: CNN,sans-serif, georgia, serif;
 	display:flex;
 	flex-wrap:nowrap;
 	margin:0 auto;
@@ -249,4 +248,86 @@ div.xarchives__title {
 }
 .xpost_tags a:hover {
 	color:rgb(55,103,179);
+}
+
+.site-header, .site-branding {
+	text-align:center;
+	width:100%;
+}
+
+.nv-post-cover {
+  margin-bottom: 60px;
+}
+
+.nv-post-cover {
+  min-height: 600px;
+  padding: 5rem;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nv-post-cover .nv-title-meta-wrap {
+  color: #efefef;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-self: flex-end;
+}
+
+.nv-post-cover .nv-title-meta-wrap > *:last-child {
+  margin-bottom: 0;
+}
+.nv-post-cover .nv-title-meta-wrap a {
+  color: #000;
+}
+
+.nv-post-cover .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nv-is-boxed {
+  padding: 2rem 3.5rem 2rem 3.5rem;
+	/* width:75vw;*/
+  background: rgba(0,0,0,0.6);
+  color: #efefef;
+}
+
+.nv-is-boxed a {
+  color: #efefef;
+}
+
+.nv-overlay {
+  background-color: #000000;
+  mix-blend-mode: normal;
+  opacity: .1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.nv-post-cover .entry-title {
+	color: #efefef;
+}
+
+.nv-meta-list {
+	list-style-type:none;
+	text-align:center;
+}
+.nv-meta-list ul{
+	
+}
+span.meta.category > span > a {
+color: #efefef;
+text-decoration:none;
+font-size: .9em;
+}
+span.meta.category > span > a:hover {
+color:#ffffff;
 }

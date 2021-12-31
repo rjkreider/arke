@@ -238,9 +238,9 @@ add_action( 'after_setup_theme', 'arke_custom_logo_setup' );
 
 
 
-add_filter('the_content','add_my_content');
+//add_filter('the_content','add_my_content');
 function add_my_content($content) {
-$my_custom_text = '<p class=post-footer>###</p>'; 
+$my_custom_text = '<p class=post-footer>&mdash; @richk</p>'; 
 if(is_single() && !is_home()) {
 $content .= $my_custom_text;
 }
@@ -314,3 +314,13 @@ function show_tags() {
  
     return trim( $output, $separator );
 }
+
+function remove_wp_ver_css_js( $src ) {
+    if ( strpos( $src, 'ver=' ) )
+        $src = remove_query_arg( 'ver', $src );
+    return $src;
+}
+add_filter( 'style_loader_src', 'remove_wp_ver_css_js', 9999 );
+add_filter( 'script_loader_src', 'remove_wp_ver_css_js', 9999 );
+
+add_filter( 'wp_image_editors', function() { return array( 'WP_Image_Editor_GD' ); } );

@@ -18,21 +18,24 @@
 	<header class="entry-header">
 
 		<?php
-		if ( is_single() ) :
-			if(has_post_thumbnail()) :
-				the_post_thumbnail('full', array('class' => 'alignfull'));
-			endif;
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		?><div class="entry-meta"><?php
-		the_date('','<span class="entry-date">','</span>');
-		echo '<span class="entry-categories"> in ';
-		the_category(', ','multiple',false);
-		echo '</span>';
-		echo '<span class="entry-tags">';
-		echo show_tags();
-		echo '</span>';
-		?></div><?php
-		else :
+		if ( is_single() ) : ?>
+<div class="nv-post-cover alignfull" style="background-image:url(<?php the_post_thumbnail_url(); ?>);">
+    <div class="nv-overlay"></div>
+    <div class="container">
+        <div class="nv-title-meta-wrap nv-is-boxed">
+            <h1 class="title entry-title"><?php the_title(); ?></h1>
+            <span class="nv-meta-list">
+                <span class="meta date posted-on">
+                    <time class="entry-date published"><?php the_date(); ?> / </time>
+                </span>
+		<span class="meta category">
+			<span class="category"><?php the_category(', ','multiple', false); ?></span>
+		</span>
+            </span>
+        </div>
+    </div>
+</div>
+		<?php else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 		?>
