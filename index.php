@@ -117,7 +117,7 @@ while ( $arke_posts->have_posts() ) :
 
 				</div><!-- .content-area -->
 			<footer class="site-footer">
-			&copy; 2021 Rich Kreider</footer><!-- .site-footer -->
+			&copy;  <?php echo date("Y"); ?> <?php echo get_bloginfo('name'); ?> </footer><!-- .site-footer -->
 
 		</div><!-- .site-content -->
 		<?php wp_footer(); ?>
