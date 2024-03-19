@@ -1011,3 +1011,58 @@ object {
 		padding: 0 5%
 	}
 }
+
+
+
+/*--------------------------------------------------------------
+# RichKreider.net Customizations
+--------------------------------------------------------------*/
+.entry-content {
+	font-family: georgia, serif;
+	font-size: 17px;
+}
+.nv-meta-list, .archives__date {
+	font-size: 90%;
+	opacity: .75;
+}
+.site-branding {
+	width:100%;
+	text-align: center;
+}
+.site-title {
+	font-size: 3em;
+	font-weight: bold;
+}
+.archives__list__div__wrap {
+display: flex;
+        justify-content: space-between;
+	column-gap: 16px;
+}
+.archives__list__div {
+	
+	   display: flex;
+        flex-direction: column;
+	margin-right: 1em;
+}
+.related_posts_title {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: .5em;
+}
+.related_posts {
+	font-size: 90%;
+	background-color: #efefef;
+	padding: 1em;
+}
+#comments {
+	border:0;
+	margin-top:0;
+	padding-top: 0;
+}
+
+.entry-header {
+	text-align: center;
+}
+.entry-header .entry-title {
+	font-size: 2.5em;
+}
