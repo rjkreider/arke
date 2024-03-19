@@ -3,7 +3,7 @@
  * Template Name: Search
  *
  * @package    Arke
- * @copyright  Copyright (c) 2024, Rich Kreider
+ * @copyright  Copyright (c) 2024, Danny Cooper
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
