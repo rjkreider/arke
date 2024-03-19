@@ -18,25 +18,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<?php wp_head(); ?>
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/custom.css"> 
 	</head>
 	<body <?php body_class(); ?>>
 		<?php wp_body_open(); ?>
 			<header class="site-header clear">
 					<div class="site-branding">
 
-<?php if ( function_exists( 'the_custom_logo' ) ) {
-    the_custom_logo();
-}
-?>						<?php if ( is_front_page() && is_home() ) : ?>
+						<?php if ( is_front_page() && is_home() ) : ?>
 
-							<p class="site-title">
+							<h1 class="site-title">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 									<?php bloginfo( 'name' ); ?>
 								</a>
-							</p>
-<p class="site-description"><?php bloginfo('description');
-?></p>
+							</h1>
 
 						<?php else : ?>
 
@@ -45,7 +39,6 @@
 									<?php bloginfo( 'name' ); ?>
 								</a>
 							</p>
-							<p class="site-description"><?php bloginfo('description'); ?></p>
 
 						<?php endif; ?>
 

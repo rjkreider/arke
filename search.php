@@ -1,16 +1,16 @@
 <?php
 /**
- * Template Name: Archive Template
+ * Template Name: Search
  *
  * @package    Arke
- * @copyright  Copyright (c) 2018, Danny Cooper
+ * @copyright  Copyright (c) 2024, Rich Kreider
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
 get_template_part( 'header' );
 ?>
 				<header>
-					<h1 class="archives__heading"><?php single_post_title(); ?></h1>
+					<h1 class="archives__heading">Found <?php echo $wp_query->found_posts; ?> Result(s) for "<?php echo get_search_query(); ?>"</h1>
 				</header>
 
 				<?php
@@ -21,7 +21,7 @@ get_template_part( 'header' );
 					'posts_per_page' => -1,
 				);
 
-				$arke_posts = new WP_Query( $args );
+				$arke_posts = $wp_query; //new WP_Query( $args );
 
 				if ( $arke_posts->have_posts() ) :
 

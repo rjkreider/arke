@@ -59,6 +59,9 @@ if ( ! function_exists( 'arke_setup' ) ) :
 			)
 		);
 
+		// Add theme support for widgets.
+		add_theme_support( 'widgets' );
+
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -220,37 +223,7 @@ endif;
 
 $tags_list = get_the_tag_list( '', esc_html__( ', ', 'arke' ) );
 
-//add_theme_support( 'custom-logo' );
-function arke_custom_logo_setup() {
-    $defaults = array(
-        'height'               => 35,
-        'width'                => 400,
-        'flex-height'          => false,
-        'flex-width'           => false,
-        'header-text'          => array( 'site-title', 'site-description' ),
-        'unlink-homepage-logo' => true, 
-    );
- 
-    add_theme_support( 'custom-logo', $defaults );
-}
- 
-add_action( 'after_setup_theme', 'arke_custom_logo_setup' );
-
-
-
-//add_filter('the_content','add_my_content');
-function add_my_content($content) {
-$my_custom_text = '<p class=post-footer>&mdash; @richk</p>'; 
-if(is_single() && !is_home()) {
-$content .= $my_custom_text;
-}
-return $content;
-}
-
-add_theme_support( 'align-wide' );
-
 function related_posts() {
-
     $post_id = get_the_ID();
     $cat_ids = array();
     $categories = get_the_category( $post_id );
@@ -263,7 +236,7 @@ function related_posts() {
 
     $current_post_type = get_post_type($post_id);
 
-    $query_args = array( 
+    $query_args = array(
         'category__in'   => $cat_ids,
         'post_type'      => $current_post_type,
         'post__not_in'    => array($post_id),
@@ -274,24 +247,25 @@ function related_posts() {
 
 
     if($related_cats_post->have_posts()):
-	 echo '<div class="related_posts">';
-	 echo '<h2>Related</h2>';
-	 echo '<div class="archives__list__div__wrap">';
-	
-         while($related_cats_post->have_posts()): $related_cats_post->the_post(); ?>
-		<div class="archives__list__div">
-			<div class="archives__title">
-		                   <a href="<?php the_permalink(); ?>">
-        		                <?php the_title(); ?>
-				   </a>
-		        </div>
+$cat_name=$categories[0]->cat_name;
+         echo '<div class="related_posts" style="margin-top: 3em!important;">';
+         echo '<div class="related_posts_title">More from ' . $cat_name. '</div>';
+         echo '<div class="archives__list__div__wrap">';
 
-	                <div class="archives__date">
-				<?php echo get_the_time('d-M-y',the_post()); ?>
-			</div>
-		</div>
+         while($related_cats_post->have_posts()): $related_cats_post->the_post(); ?>
+                <div class="archives__list__div">
+                        <div class="archives__title">
+                                   <a href="<?php the_permalink(); ?>">
+                                        <?php the_title(); ?>
+                                   </a>
+                        </div>
+
+                        <div class="archives__date">
+                                <?php echo get_the_date(); //echo get_the_time('d-M-y',the_post()); ?>
+                        </div>
+                </div>
         <?php endwhile;
-	echo '</div></div>';
+        echo '</div></div>';
         // Restore original Post Data
        wp_reset_postdata();
      endif;
@@ -299,28 +273,18 @@ function related_posts() {
 }
 
 
+function crunchify_clean_header_hook(){
+    wp_deregister_script( 'comment-reply' );
+}
+add_action('init','crunchify_clean_header_hook');
 
-function show_tags() {
-    $post_tags = get_the_tags();
-    $separator = ', ';
-    $output = '';
- 
-    if ( ! empty( $post_tags ) ) {
-	echo ' | ';
-        foreach ( $post_tags as $tag ) {
-            $output .= '<a href="' . esc_attr( get_tag_link( $tag->term_id ) ) . '">#' . __( $tag->name ) . '</a>' . $separator;
+function crunchify_remove_jquery_migrate( $scripts ) {
+    if ( ! is_admin() && isset( $scripts->registered['jquery'] ) ) {
+        $script = $scripts->registered['jquery'];
+        
+        if ( $script->deps ) { 
+            $script->deps = array_diff( $script->deps, array( 'jquery-migrate' ) );
         }
     }
- 
-    return trim( $output, $separator );
 }
-
-function remove_wp_ver_css_js( $src ) {
-    if ( strpos( $src, 'ver=' ) )
-        $src = remove_query_arg( 'ver', $src );
-    return $src;
-}
-add_filter( 'style_loader_src', 'remove_wp_ver_css_js', 9999 );
-add_filter( 'script_loader_src', 'remove_wp_ver_css_js', 9999 );
-
-add_filter( 'wp_image_editors', function() { return array( 'WP_Image_Editor_GD' ); } );
+add_action( 'wp_default_scripts', 'crunchify_remove_jquery_migrate' );
